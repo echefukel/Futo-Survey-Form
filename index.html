@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+              <header class="header">
+                  <h1 id="title" class="text-center"> Futo Survey Form</h1>
+                  <p id="description" class="description text-center"> take out time to fill out this form....</p>
+               </header>
+    <form id="survey-form">
+          <div class="form-group">
+               <label id="name-label" for="name">NAME</label>
+                <input type="text"id="name"
+                name="name"
+                class="form-control"
+                placeholder="enter your name"
+                required/>
+          </div>
+          <div class="form-group">
+            <label id="email-name"for="email"> E-MAIL</label>
+            <input type="email" id="email"name="email" placeholder="enter your email"  required input/>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">AGE</label>
+            <input type="number" id="number" name="age" placeholder="age" min="10" max="99" required/>
+          </div>
+          <div class="form-group">
+            <Label for "dropdown"> WHAT LEVEL ARE YOU IN?</Label>
+            <select id="dropdown" name="level"class="form-control" required>
+              <option disable selected value> select current level</option>
+            <option value="firstyear">100L</option>
+            <option value="secondyear">200L</option>
+            <option value="ThirdYear">300L</option>
+            <option value="FourthYear">400L</option>
+            <option value="FifthYear">500L</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p id = "question">IS FUTO THE RIGHT SCHOOL FOR YOU ?</p>
+            
+            
+            
+           <label class = "radio-label">Definitely</label>
+            <div class="checkbox"><input name ="user-recommend" value="definitely" type="radio" class="input-radio" checked/></div>
+            <label class = "radio-label">Maybe</label>
+               <div class="checkbox"><input name ="user-recommend" value="definitely" type="radio" class="input-radio" checked/></div> 
+            <label class = "radio-label">I dont think so</label>
+                <div class="checkbox"><input name ="user-recommend" value="definitely" type="radio" class="input-radio" checked/></div> 
+            <label class = "radio-label"> No,I dont think so </label>
+                <div class="checkbox"><input name ="user-recommend" value="definitely" type="radio" class="input-radio" checked/>
+                </div>
+          </div>
+          <div class="form-group">
+            <p id = 'improve'>WHAT WOULD YOU WANT TO SEE IMPROVED IN FUTO?</p>
+            <!-- <span class="clue">(check all that apply)</span> -->
+            
+            <label class ="check-label">New Classes</label>
+                <div class="checklabel"><input type="checkbox" value="new-classes" name="want" class="input-checkbox"/></div>
+            <label class = "check-label">Technology</label>
+                <div class="checklabel"><input type="checkbox" value="tech" name="want" class="input-checkbox"/></div>
+            <label class = "check-label">Quality Lecturers</label>
+                <div class="checklabel"><input type="checkbox" value="quality" name="want" class="input-checkbox"/></div>
+            
+            
+          </div>
+          <div class="form-group">
+            <p id = "para"><strong> ANY OTHER COMMENT GOES HERE....</strong></p>
+            <textarea id="comments" class="input-textarea"name="comment" placeholder="enter your comment here...."></textarea>
+            <div class="form-group">
+                 <button type="submit" id="submit">
+            submit </button>
+          </div>
+    </form>  
+</div>
+    
+
+
+</body>
+</html>
